@@ -1,0 +1,17 @@
+{
+  "name": "hypertrack-ext",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "hypertrack-ext",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}
