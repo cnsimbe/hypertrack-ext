@@ -1,7 +1,7 @@
 /********* hypertrack-ext.m Cordova Plugin Implementation *******/
 #import "hypertrackExt.h"
 #import <objc/runtime.h>
-
+#import <HyperTrack/HyperTrack-Swift.h>
 
 @implementation AppDelegate (notification)
 
