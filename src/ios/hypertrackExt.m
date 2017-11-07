@@ -6,17 +6,17 @@
 @implementation AppDelegate (notification)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ...
+    
     [HyperTrack registerForNotifications];
 }
 
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(nonnull NSData *)deviceToken{
-    ...
+    
     [HyperTrack didRegisterForRemoteNotificationsWithDeviceTokenWithDeviceToken:deviceToken];
 }
 
 -(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(nonnull NSError *)error{
-    ...
+    
     [HyperTrack didFailToRegisterForRemoteNotificationsWithErrorWithError:error];
 }
 
