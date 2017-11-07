@@ -19,13 +19,4 @@
 		</config-file>
 		<source-file src="src/android/hypertrackExt.java" target-dir="src/hypertrackExt" />
 	</platform>
-	<platform name="ios">
-		<config-file parent="/*" target="config.xml">
-			<feature name="hypertrackExt">
-				<param name="ios-package" value="hypertrackExt" />
-			</feature>
-		</config-file>
-		<source-file src="src/ios/hypertrackExt.m" />
-		<header-file src="src/ios/hypertrackExt.h"/>
-	</platform>
 </plugin>
