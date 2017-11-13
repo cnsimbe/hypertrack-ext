@@ -6,8 +6,8 @@
 	</js-module>
 	<platform name="android">
 		<config-file parent="/*" target="res/xml/config.xml">
-			<feature name="hypertrackExt">
-				<param name="android-package" value="hypertrackExt.hypertrackExt" />
+			<feature name="hyperTrack">
+				<param name="android-package" value="hypertrackExt.hyperTrack" />
 			</feature>
 		</config-file>
 		<config-file parent="/manifest/application" target="AndroidManifest.xml">
@@ -17,6 +17,7 @@
 				</intent-filter>
 			</service>
 		</config-file>
+		<source-file src="src/android/hyperTrack.java" target-dir="src/hypertrackExt" />
 		<source-file src="src/android/hypertrackExt.java" target-dir="src/hypertrackExt" />
 	</platform>
 </plugin>
