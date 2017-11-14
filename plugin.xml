@@ -6,7 +6,7 @@
 	</js-module>
 	<platform name="android">
 		<config-file parent="/*" target="res/xml/config.xml">
-			<feature name="hyperTrack">
+			<feature name="hyperTrackExt">
 				<param name="android-package" value="hypertrackExt.hyperTrack" />
 			</feature>
 		</config-file>

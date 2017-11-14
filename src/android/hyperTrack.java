@@ -1,9 +1,10 @@
 package hypertrackExt;
 
-import io.intercom.android.sdk.api.Api;
+import com.hypertrack.lib.HyperTrack;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
-
+import org.json.JSONException;
+import org.json.JSONArray;
 import org.apache.cordova.PluginResult;
 
 /**
@@ -14,8 +15,7 @@ public class hyperTrack extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("disablePushNotification")) {
-            boolean disable = args.getBoolean(0);
-            HyperTrack.disablePersistentNotification(disable);
+            HyperTrack.disablePersistentNotification(true);
             return true;
         }
         return false;
