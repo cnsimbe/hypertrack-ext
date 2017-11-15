@@ -4,8 +4,10 @@ var hypertrackExt = {}
 
 
 // Helper method to test sdk
-hypertrackExt.disablePushNotification = function(disable, success, error) {
-    exec(success, error, "hyperTrackExt", "disablePushNotification", [disable]);
+hypertrackExt.disablePushNotification = function() {
+	return new Promise(function(res,rej){
+		exec(res, rej, "hyperTrackExt", "disablePushNotification", []);
+	})
 };
 
 
