@@ -7,3 +7,6 @@ var hypertrackExt = {}
 hypertrackExt.disablePushNotification = function(disable, success, error) {
     exec(success, error, "hyperTrackExt", "disablePushNotification", [disable]);
 };
+
+
+module.exports = hypertrackExt
